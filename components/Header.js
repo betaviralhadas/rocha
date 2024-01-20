@@ -1,18 +1,21 @@
-import React from 'react';
-import Logo from "../img/logo.jpg";
+//import React from 'react';
+import Image from 'next/image'
+import Logo from "../public/img/logo.jpg";
+//import "../style/components/Header.css";
+import Link from 'next/link';
 
 const Header = () => {
     return (
-        <section>
-            <img
+        <section className='header'>
+            <Image
                 className=""
                 src={Logo}
                 alt="restauranteRocha"
             />
             <nav>
-                <ul>
+                <ul className='navigation_header'>
                     <li>Home</li>
-                    <li>Menu</li>
+                    <li><Link href={"/menu"}>Menu</Link></li>
                     <li>Gallery</li>
                     <li>Contact</li>
                 </ul>
