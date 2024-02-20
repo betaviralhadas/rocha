@@ -1,6 +1,6 @@
 //import React from 'react';
 import Image from 'next/image'
-import Logo from "../public/img/logo.jpg";
+import Logo from "../public/img/logo2.png";
 //import "../style/components/Header.css";
 import Link from 'next/link';
 
@@ -8,16 +8,16 @@ const Header = () => {
     return (
         <section className='header'>
             <Image
-                className=""
+                className="logo"
                 src={Logo}
-                alt="restauranteRocha"
+                alt="restaurantRocha"
             />
             <nav>
                 <ul className='navigation_header'>
-                    <li>Home</li>
+                    <li><Link href={"/"}>Home</Link></li>
                     <li><Link href={"/menu"}>Menu</Link></li>
                     <li>Gallery</li>
-                    <li>Contact</li>
+                    <li><Link href={"#contact"}>Contact</Link></li>
                 </ul>
             </nav>
         </section>

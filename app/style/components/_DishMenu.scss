@@ -1,0 +1,28 @@
+.dish {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    cursor: pointer;
+
+
+    .description {
+        display: none;
+        
+    }
+    
+}
+
+.dish:hover p {
+    color: aqua;
+}
+.dish:hover .description {
+    
+display: flex;
+flex-direction: row;
+gap: 20px;
+
+.img_dish {
+    width: 150px;
+    height: 150px;
+}
+}
