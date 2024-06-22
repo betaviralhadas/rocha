@@ -16,7 +16,7 @@ const Header = () => {
                 <ul className='navigation_header'>
                     <li><Link href={"/"}>Home</Link></li>
                     <li><Link href={"/menu"}>Menu</Link></li>
-                    <li>Gallery</li>
+                    <li><Link href={"/gallery"}>Gallery</Link></li>
                     <li><Link href={"#contact"}>Contact</Link></li>
                 </ul>
             </nav>

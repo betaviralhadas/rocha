@@ -1,7 +1,7 @@
 import Image from "next/image"
-import plat from '../public/img/peixe.jpg'
+//import plat from '../public/img/peixe.jpg'
 
-export default function DishMenu() {
+/*export default function DishMenu() {
     return (
         <>
             <div>
@@ -108,4 +108,35 @@ export default function DishMenu() {
             </div>
         </>
     )
+}*/
+//import Image from "next/image";
+import dishes from "../public/DishMenu.json";
+
+export default function DishMenu() {
+    const categories = ["Especialidades", "Carnes", "Peixes", "Mariscos", "Vegan"];
+
+    return (
+        <>
+            {categories.map(category => (
+                <div key={category}>
+                    <h2>{category}</h2>
+                    {dishes.filter(dish => dish.category === category).map(dish => (
+                        <div className="dish" key={dish.id}>
+                            <p>{dish.dish}<span>{dish.serving}</span></p>
+                            <article className="description">
+                                <Image
+                                    className="img_dish"
+                                    src={dish.image}
+                                    alt={dish.dish}
+                                    width={500}
+                                    height={300}
+                                />
+                                <p className="description_text">{dish.description}</p>
+                            </article>
+                        </div>
+                    ))}
+                </div>
+            ))}
+        </>
+    );
 }

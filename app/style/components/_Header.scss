@@ -30,14 +30,24 @@
 
         .navigation_header {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             list-style: none;
             margin-left: -25px;
             padding-right: 10px;
+            justify-content: center;
+    align-items: center;
 
-            a {
-                text-decoration: none;
-                color: black;
+            li {
+                width: 50px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                a:hover {
+                    font-weight: 900;
+                }
             }
         }
     }
