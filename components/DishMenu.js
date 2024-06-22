@@ -1,5 +1,5 @@
 import Image from "next/image"
-import plat from '../public/img/logo2.png'
+import plat from '../public/img/peixe.jpg'
 
 export default function DishMenu() {
     return (
@@ -14,13 +14,54 @@ export default function DishMenu() {
                             src={plat}
                             alt=""
                         />
-                        <p>ffffffffffffffffffff</p>
+                        <p className="description_text">CUISINES Seafood, Mediterranean, European, Portuguese. SPECIAL DIETS Gluten Free Options. MEALS Lunch, Dinner. hhhhhhhhh hhhhhhhhhhh hhhhhhhhhhhhhhhh hhhhhhhhh hhhhh</p>
                     </article>
                 </div>
-                <p>Caldeirada à Rocha c\ Marisco<span>2PAX</span></p>
-                <p>Cataplana de Tamboril c\ Marisco<span>2PAX</span></p>
-                <p>Cataplana c\ Marisco<span>2PAX</span></p>
-                <p>Cataplana de Robalo c\ Marisco<span>2PAX</span></p>
+                <div className="dish">
+                    <p>Caldeirada à Rocha c\ Marisco<span>2PAX</span></p>
+                    <article className="description">
+                        <Image
+                            className="img_dish"
+                            src={plat}
+                            alt=""
+                        />
+                        <p  className="description_text">CUISINES Seafood, Mediterranean, European, Portuguese. SPECIAL DIETS Gluten Free Options. MEALS Lunch, Dinner. hhhhhhhhh hhhhhhhhhhh hhhhhhhhhhhhhhhh hhhhhhhhh hhhhh</p>
+                    </article>
+                </div>
+                <div className="dish">
+                    <p>Cataplana de Tamboril c\ Marisco<span>2PAX</span></p>
+                    <article className="description">
+                        <Image
+                            className="img_dish"
+                            src={plat}
+                            alt=""
+                        />
+                        <p className="description_text">CUISINES Seafood, Mediterranean, European, Portuguese. SPECIAL DIETS Gluten Free Options. MEALS Lunch, Dinner. hhhhhhhhh hhhhhhhhhhh hhhhhhhhhhhhhhhh hhhhhhhhh hhhhh</p>
+                    </article>
+                </div>
+                <div className="dish">
+                    <p>Cataplana c\ Marisco<span>2PAX</span></p>
+                    <article className="description">
+                        <Image
+                            className="img_dish"
+                            src={plat}
+                            alt=""
+                        />
+                        <p className="description_text">CUISINES Seafood, Mediterranean, European, Portuguese. SPECIAL DIETS Gluten Free Options. MEALS Lunch, Dinner. hhhhhhhhh hhhhhhhhhhh hhhhhhhhhhhhhhhh hhhhhhhhh hhhhh</p>
+                    </article>
+                </div>
+                <div className="dish">
+                    <p>Cataplana de Robalo c\ Marisco<span>2PAX</span></p>
+                    <article className="description">
+                        <Image
+                            className="img_dish"
+                            src={plat}
+                            alt=""
+                        />
+                        <p className="description_text">ffffffffffffffffffff</p>
+                    </article>
+                </div>
+
                 <p>Cataplana de Bacalhau c\ Marisco<span>2PAX</span></p>
                 <p>Arroz de Tamboril<span>1PAX | 2PAX</span></p>
                 <p>Arroz de Tamboril c\ Marisco<span>2PAX</span></p>

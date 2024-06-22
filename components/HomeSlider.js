@@ -51,7 +51,7 @@ const HomeSlider = () => {
         className={`slider_content ${index === currentIndex ? 'active' : ''}`}
         key={item.id}
         >
-          <img className="img" src={item.image} alt="image" />
+          <img className="img" src={item.image} alt={item.alt} />
         </div>
       ))}
     </div>
