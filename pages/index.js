@@ -26,14 +26,14 @@ export default function Home() {
                             />
                             <h2>Menu</h2>
                         </Link>
-                        <section className="gallery_link">
+                        <Link href={"/gallery"} className="gallery_link">
                             <h2>Gallery</h2>
                             <Image
                                 className="image_link"
                                 src={Gallery}
                                 alt="gallery"
                             />
-                        </section>
+                        </Link>
                     </section>
                 </main>
                 <Footer />

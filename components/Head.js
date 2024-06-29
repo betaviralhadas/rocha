@@ -7,6 +7,7 @@ export default function HeadPage() {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <script src="https://kit.fontawesome.com/378a8f4b87.js" crossorigin="anonymous"></script>
             <title>Restaurante Rocha</title>
+            
         </Head>
     )
 }

@@ -6,5 +6,16 @@ const nextConfig = {
   
   module.exports = nextConfig
 
-  const withSass = require('@zeit/next-sass');
-module.exports = withSass({});
+ /* const withSass = require('@zeit/next-sass');
+module.exports = withSass({});*/
+
+// next.config.js
+/*const withSass = require('@zeit/next-sass');
+
+module.exports = withSass({
+  // Suas outras configurações
+  webpack(config, options) {
+    return config;
+  },
+});*/
+
